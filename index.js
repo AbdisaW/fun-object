@@ -1,11 +1,8 @@
-// If Customer has more than 100 points
-// they are 'gold' customer, otherwise,
-// they are 'silver' customer
 
+// logical Operator
 
-// Ternary Operator
-let points = 110;
+let highIncome = true;
+let goodCreditScore = true;
+let eligibleForLoan = highIncome && goodCreditScore;
 
-let types = points > 100 ? 'gold' : 'silver';
-
-console.log(types);
+console.log(eligibleForLoan);
