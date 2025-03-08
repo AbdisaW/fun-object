@@ -1,4 +1,11 @@
 
-for(let i = 5; i >=1; i--){
-    if(i % 2 !== 0) console.log("helloo world ",i);
+const person= {
+    name: 'John',
+    age: 30
 }
+
+for(let key in person) console.log(key, person[key])
+
+const colors = ['red', 'green', 'blue'];
+
+for(let i in colors) console.log(i,colors[i]);
