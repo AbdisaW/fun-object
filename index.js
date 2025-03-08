@@ -1,8 +1,7 @@
+let landScape = isLandScape(800, 800);
+console.log(landScape);
 
-let number = max(20, 10);
+function isLandScape(width, height) {
+    return width > height;
 
-console.log(number);
-function max(a, b){
-    return (a > b) ? a : b;
-    
 }
