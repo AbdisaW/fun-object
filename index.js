@@ -1,3 +1,4 @@
+//Add function to display numbers with EVEN or ODD labels up to a limit
 showNumbers(10);
 function showNumbers(limit){
     
