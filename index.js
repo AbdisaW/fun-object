@@ -1,14 +1,13 @@
-showNumbers(10);
-function showNumbers(limit){
-    
-    for (let index = 0; index <= limit; index++) {
 
-        const message = (index % 2 === 0) ? 'EVEN' : "ODD";
-        console.log(index, message)
-      
-       
+console.log(sum(10));
 
-        
+function sum(limit){
+    let sum = 0;
+    for(let i =0; i <= limit; i++){
+        if(i % 3 === 0 || i % 5 === 0){
+            sum+= i;
+            
+        }
     }
-    
+    return sum;
 }
