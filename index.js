@@ -1,13 +1,29 @@
 
-console.log(sum(10));
+const marks =[80, 80, 50, 80, 70];
+console.log(calculateGrade(marks));
 
-function sum(limit){
+function calculateGrade(marks){
     let sum = 0;
-    for(let i =0; i <= limit; i++){
-        if(i % 3 === 0 || i % 5 === 0){
-            sum+= i;
-            
-        }
+   
+   for(let i =0; i < marks.length; i++){
+    sum += marks[i];
+   }
+   let Average = sum / marks.length ;
+   if(Average >=0 && Average <= 59){
+     return 'C';
     }
-    return sum;
+   else if(Average >=60 && Average <= 69){
+    return'D';
+   }
+   else if(Average >=70 && Average <= 79){
+    return'C';
+   }else if(Average >=80 && Average <= 89){
+    return'B';
+   }else if(Average >=90 && Average <= 100){
+    return'A';
+   }
+   else{
+    return 'the averge is not correct ';
+   }
+   
 }
