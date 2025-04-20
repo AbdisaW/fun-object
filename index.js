@@ -1,12 +1,21 @@
-showStarts(5)
 
-function showStarts(rows){
-  for(let row = 1; row <= rows; row++){
-    let pattern ='';
-    for(let i = 0; i < row; i++){
-      pattern += "*"
-      
-    }
-    console.log(pattern)
+
+function Circle(radius){
+  this.radius = radius;
+  this.draw = function(){
+    console.log('draw');
+
   }
+
 }
+
+const Circle1 =new Function('radius', `
+  this.radius = radius;
+  this.draw = function(){
+    console.log('draw');
+
+  }
+`);
+
+const circle = new Circle1(1);
+const another = new Circle(1);
