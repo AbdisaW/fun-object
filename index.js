@@ -1,21 +1,9 @@
 
+let number = 10;
 
-function Circle(radius){
-  this.radius = radius;
-  this.draw = function(){
-    console.log('draw');
-
-  }
-
+function increase(number){
+  number++;
 }
 
-const Circle1 =new Function('radius', `
-  this.radius = radius;
-  this.draw = function(){
-    console.log('draw');
-
-  }
-`);
-
-const circle = new Circle1(1);
-const another = new Circle(1);
+increase (number);
+console.log(number)
